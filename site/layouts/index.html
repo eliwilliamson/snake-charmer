@@ -1,0 +1,79 @@
+{{ partial "header" . }}
+{{ partial "preloader" }}
+{{ partial "notification" . }}
+
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div id="rotating-text" class="clip col-md-8 col-sm-10">
+        <h5>{{ .Site.Data.landing.hook }}</h5>
+        <h1>
+          <span>{{ .Site.Data.landing.headline.lead }}</span>
+          <span id="verbs">
+            {{ range $index, $id :=  .Site.Data.landing.headline.verbs }}
+              <b{{ if eq $index 0 }} class="is-visible"{{ end }}>{{ . }}.</b>
+            {{ end }}
+          </span>
+        </h1>
+        <ul class="section-btn">
+          <a href="{{ .Site.Data.landing.primarycta.linksto }}"><span data-hover="Check Projects">{{ .Site.Data.landing.primarycta.btntext }}</span></a>
+        </ul>
+      </div>
+      <div id="sun" class="col-md-4 col-sm-10">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+          <h1>Featured Projects</h1>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <!-- PROJECT ITEM -->
+        <div class="project-item">
+          <a href="project-detail.html">
+            <img src="/img/global/project-image1.jpg" class="img-responsive" alt="">
+          </a>
+        </div>
+        <div class="project-overlay">
+          <!-- <h4>Graphic Design</h4> -->
+          <h3>Banana Noolab</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <!-- PROJECT ITEM -->
+        <div class="project-item">
+          <a href="project-detail.html">
+            <img src="/img/global/project-image2.jpg" class="img-responsive" alt="">
+          </a>
+        </div>
+        <div class="project-overlay">
+          <!-- <h4>Photoshop Mockup</h4> -->
+          <h3>Apple Magic Store</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <!-- PROJECT ITEM -->
+        <div class="project-item">
+          <a href="project-detail.html">
+            <img src="/img/global/project-image3.jpg" class="img-responsive" alt="">
+          </a>
+        </div>
+        <div class="project-overlay">
+          <!-- <h4>Visual Idenity</h4> -->
+          <h3>Orange Juice</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "bottom-cta" .Site.Data.landing }}
+{{ partial "footer" . }}

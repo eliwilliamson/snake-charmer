@@ -1,0 +1,49 @@
+#header {
+  .logo {
+    height: $large;
+    margin-top: calc(($large - $medium) / -2);
+  }
+}
+
+.navbar-default {
+  border: none;
+  margin-bottom: 0;
+  background-color: white;
+  padding-top: 45px;
+
+  .navbar-nav li {
+    a {
+      background-image: linear-gradient(to bottom, white 95%, $pink 96%, $pink 100%);
+      background-position: 0 4px;
+      background-repeat: no-repeat;
+      font-size: $tiny;
+      color: $grey;
+      line-height: $medium;
+      padding-right: 22px;
+      padding-left: 22px;
+      transition: background-position linear 0.2s;
+      font-weight: $bold;
+      position: relative;
+
+      &:hover {
+        background-position: 0;
+      }
+    }
+
+    &.active > a {
+      background-color: transparent;
+      color: #5050FF;
+    }
+  }
+
+  .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+    background-color: transparent;
+
+    .icon-bar {
+      background: #5050FF;
+      border-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+#custom-cms {
+
+  .cms__index__editor {
+    border: 2px solid lightgrey;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .linkContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .linkName, .linkLink {
+    flex-basis: 48%;
+  }
+}

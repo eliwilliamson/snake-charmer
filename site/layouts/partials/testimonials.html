@@ -1,0 +1,33 @@
+<section class="testimonials contained">
+  <div class="testimonials-partial carousel">
+    {{ range first 4 (where .Site.Pages "Section" "testimonials").ByTitle }}
+      <blockquote class="quote">
+        <q>{{ .Params.quote }}</q>
+        <cite>
+          <strong>{{ .Params.title }}</strong>
+          {{ if eq .Params.program "Bachelor of Science in Nursing" }}
+            , BSN
+          {{ else if eq .Params.program "Accelerated Bachelor of Science of Nursing" }}
+            , ABSN
+          {{ else if eq .Params.program "Bachelors in Health Care Administration" }}
+            , HCA
+          {{ else if eq .Params.program "RN-BSN Completion" }}
+            , RN-BSN
+          {{ else if eq .Params.program "Associate of Science in General Studies" }}
+            , Associate of Science
+          {{ else }}{{ end }}
+           student
+        </cite>
+      </blockquote>
+    {{ end }}
+  </div>
+  <div class="carousel-pagination">
+    {{ range $index, $id := first 4 (where .Site.Pages "Section" "testimonials").ByTitle }}
+      <div class="portrait-nav{{ if eq $index 0 }} active{{ end }}">
+        <img src="{{ .Params.portraitpath }}" class="responsive" />
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+

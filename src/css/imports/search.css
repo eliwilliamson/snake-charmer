@@ -1,0 +1,230 @@
+.search-overlay {
+  background: white;
+  background: rgba(255,255,255,0.97);
+  position: absolute;
+  display: none;
+  padding-top: $xl;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: -1;
+
+  @media screen and (min-width: $navBreak) {
+    padding-top: 151px;
+  }
+
+  &.active {
+    z-index: 98;
+    display: block;
+  }
+
+  .contained {
+    text-align: right;
+  }
+
+  .search-input {
+    font-size: $medium;
+    font-weight: $light;
+    font-size: $small;
+    font-weight: $light;
+    border: none;
+    border-bottom: 1px solid $lightestGrey;
+    background: none;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: $navy;
+    padding: 0 45px $micro 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &::placeholder {
+      color: $lighterGrey;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media screen and (min-width: $mobile) {
+      font-size: $medium;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-weight: $light;
+      font-size: $xl;
+      padding: 0 114px $medium 0;
+    }
+
+    &:focus {
+      outline: none;
+
+      ~ .search-bar {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 100%;
+
+    &:before,
+    &:after {
+      content: ' ';
+      height: 1px;
+      width: 0;
+      bottom: 0;
+      position: absolute;
+      transition: .2s ease all;
+      transition-delay: .2s;
+    }
+
+    &:before {
+      left: 50%;
+      background: $blue;
+    }
+
+    &:after {
+      right: 50%;
+      background: $blue;
+    }
+  }
+
+  .clear-search {
+    position: absolute;
+    top: 0;
+    margin: 7$micro 0 0 -35px;
+    cursor: pointer;
+    color: white;
+    clear: both;
+    color: transparent;
+    padding: $medium;
+    opacity: 0;
+    transition: all .2s ease;
+    z-index: -1;
+
+    @media screen and (min-width: $mobile) {
+      margin: 8$micro 0 0 -35px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin: 131px 0 0 -90px;
+    }
+
+    @media screen and (min-width: $navBreak) {
+      margin: 174px 0 0 -90px;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      left: 0;
+      height: 1px;
+      background: $lighterGrey;
+      content: ' ';
+      width: $small;
+
+      @media screen and (min-width: $mobile) {
+        width: $medium;
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: $xl;
+      }
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &.active {
+      opacity: 1;
+      z-index: 99;
+    }
+  }
+
+  .esc-note {
+    font-size: $tiny;
+    font-weight: $regular;
+    color: $lighterGrey;
+    padding-top: $micro;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+
+    strong {
+      font-weight: $bold;
+    }
+  }
+
+  .search-results {
+    text-align: left;
+    width: 100%;
+
+    .search-column {
+      list-style-type: none;
+      padding: 0;
+      transition: height .2s ease;
+
+      @media screen and (min-width: $tablet) {
+        @neat-span-columns 4;
+        @neat-omega 3n;
+      }
+    }
+
+    .section-label {
+      padding: $small 0 $tiny 0;
+    }
+
+    li {
+      margin-bottom: $tiny;
+
+      &.selected {
+        background: $blue;
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    a:not(.text-link) {
+      text-transform: capitalize;
+      color: $navy;
+      font-weight: $regular;
+      font-size: 1$micro;
+      line-height: 22px;
+      text-decoration: none;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    .no-results {
+      color: $lightGrey;
+      line-height: $small;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<section class="hero-nav">
+  <div class="contained">
+    <h4 class="section-label page-label">{{ .pagelabel }}</h4>
+  </div>
+  <div class="contained">
+    {{ range .nav }}
+      <div class="section-row">
+        <style>
+          @media screen and (min-width: 768px) {
+            .section-link.for-{{ .section | urlize }}:hover .megatext {
+              background: url("{{ .textbg }}.jpg") no-repeat center;
+              background-size: cover;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        </style>
+        <a class="section-link for-{{ .section | urlize }}" href="{{ .linkto }}">
+          <h1 class="megatext">{{ .section }}<span>.</span></h1>
+        </a>
+        <div class="cta">
+          <img src="{{ .topimgpath }}.{{ .topimgtype }}" srcset="{{ .topimgpath }}.{{ .topimgtype }} 1x, {{ .topimgpath }}@2x.{{ .topimgtype }} 2x" class="responsive" />
+          <a href="/apply" class="btn-urgent">Apply Now →</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <div id="waves" class="waves">
+    <svg class="wave-images" viewBox="0 0 1440 502" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+          <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+              <stop stop-color="#5F99E7" offset="0%"></stop>
+              <stop stop-color="#5F99E7" offset="99.0174585%"></stop>
+          </linearGradient>
+          <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="99.0174585%" id="linearGradient-2">
+              <stop stop-color="#5E35B7" offset="0%"></stop>
+              <stop stop-color="#5F99E7" offset="100%"></stop>
+          </linearGradient>
+          <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="96.2093064%" id="linearGradient-3">
+              <stop stop-color="#6CA2EA" offset="0%"></stop>
+              <stop stop-color="#BBD7FE" offset="100%"></stop>
+          </linearGradient>
+      </defs>
+      <g class="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.049999997">
+          <g id="Desktop-HD" transform="translate(0.000000, -143.000000)" fill="url(#linearGradient-1)">
+              <g id="hero" transform="translate(-464.000000, 119.000000)">
+                  <g id="bg">
+                      <path d="M435,382.728859 C622,446 857.371608,415.515448 985.777477,382.728859 C1417.70044,272.443552 1423.7677,20.2261635 1904,24.0461596 C2527,29.0017978 2237,710 692,477 C350.743072,425.535363 261.206699,323.926183 435,382.728859 Z" id="Path-2"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+      <g class="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.049999997">
+          <g id="Desktop-HD" transform="translate(0.000000, -206.000000)" fill="url(#linearGradient-2)">
+              <g id="hero" transform="translate(-464.000000, 119.000000)">
+                  <g id="bg">
+                      <path d="M464,313.453652 C1450,438 1343,82.0443618 1966,87 C2589,91.9556382 2202,492 2202,492 C2202,492 2475.29843,381.113293 1801,375 C1398.12999,371.347519 1058,506 686,534 C314,562 -522,188.907304 464,313.453652 Z" id="Path-2-Copy"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+      <g class="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.049999997">
+          <g id="Desktop-HD" transform="translate(0.000000, -165.000000)" fill="url(#linearGradient-3)">
+              <g id="hero" transform="translate(-464.000000, 119.000000)">
+                  <g id="bg">
+                      <path d="M464,313.453652 C1450,438 1481,172 1980,21 C2479,-130 2202,592 2202,592 C2202,592 2475.29843,481.113293 1801,475 C1398.12999,471.347519 1058,366 686,394 C314,422 -522,188.907304 464,313.453652 Z" id="Path-2-Copy-2"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+    </svg>
+  </div>
+</section>

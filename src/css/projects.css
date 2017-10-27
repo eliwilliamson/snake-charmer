@@ -1,0 +1,14 @@
+#project-detail-links {
+  background: #5050FF;
+  padding: 82px 0 102px 0;
+  margin-top: 102px;
+}
+
+#project-detail-links h3 {
+  color: #e0e0e0;
+}
+
+#project-detail-links p a {
+  color: white;
+  font-size: 32px;
+}

@@ -1,0 +1,43 @@
+.project-item {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+.project-overlay {
+  h3 {
+    color: #454545;
+    font-weight: normal;
+    margin-top: 6px;
+  }
+  h4 {
+    color: #858585;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+}
+
+.project-item:hover {
+  background: white;
+  box-shadow: 0px $tiny 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#project .project-overlay {
+  padding: 12px 0 26px 12px;
+}
+
+.project-detail-text {
+  padding: 62px 82px;
+}
+
+.project-detail-info {
+  padding: 12px 0 62px 0;
+  h3:last-child {
+    margin-top: 0;
+  }
+}

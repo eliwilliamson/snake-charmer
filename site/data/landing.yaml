@@ -1,0 +1,16 @@
+---
+styleoverrides: /css/landing.css
+
+hook: Sunset those worries...
+headline:
+  lead: Let's craft experiences that
+  verbs:
+    - resonate with users
+    - grow your business
+    - bridge chasms
+    - transform brands
+
+primarycta:
+  btntext: See Projects →
+  linksto: /projects
+---

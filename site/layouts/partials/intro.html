@@ -1,0 +1,14 @@
+<div class="intro centered-text">
+  <h1>{{ .headline | markdownify }}</h1>
+
+  {{ if .subhead }}
+    <h2>{{ .subhead | markdownify }}</h2>
+  {{ end }}
+
+  {{ if .primarycta }}
+    {{ partial "btn" .primarycta }}
+  {{ end }}
+  {{ if .secondarycta }}
+    {{ partial "btn" .secondarycta }}
+  {{ end }}
+</div>

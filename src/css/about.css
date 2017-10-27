@@ -1,0 +1,36 @@
+.about-info {
+  text-align: center;
+  padding: 62px 0 42px 0;
+}
+
+.about-info h1 {
+  padding-bottom: 6px;
+}
+
+.about-info:after {
+  content: "";
+  background: #000;
+  width: 14%;
+  height: 2px;
+  position: relative;
+  display: block;
+  margin: 22px auto 0 auto;
+}
+
+.about-service-text {
+  padding: 62px 0;
+}
+
+.about-service-text .section-title {
+  padding-bottom: 0px;
+}
+
+.about-service-text ul li {
+  color: #575757;
+  list-style: square;
+  font-size: 1$micro;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  padding: 2px 0;
+}

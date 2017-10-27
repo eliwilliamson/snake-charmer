@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css"/>
+
+{{ if isset .Params "styleoverrides" }}
+  <link rel="stylesheet" href="{{ .Params.styleoverrides }}"/>
+{{ else if or (eq .Title "Blog") (eq .Section "blog") }}
+  <link rel="stylesheet" href="{{ .Site.Data.blog.styleoverrides }}"/>
+{{ else if eq .Title "404 Page not found" }}
+  <link rel="stylesheet" href="/404.css"/>
+{{ else if .IsHome }}
+  <!-- landing page doesn't have a local styleoverides variable -->
+  <link rel="stylesheet" href="{{ .Site.Data.landing.styleoverrides }}"/>
+{{ end }}
