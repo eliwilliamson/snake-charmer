@@ -9,11 +9,16 @@
    }
 }
 
-.headline {
-  padding: 102px 0 62px 0;
+.error-message {
+  padding-top: $xl;
+  padding-bottom: $xl;
 
-  .header-text {
-    padding-top: 62px;
+  strong {
+    color: $pink;
+  }
+
+  span {
+    color: white;
   }
 }
 
