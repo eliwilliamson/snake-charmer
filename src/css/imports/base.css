@@ -92,3 +92,11 @@ a:hover, a:active, a:focus {
 #bottom-cta, footer {
   text-align: center;
 }
+
+.headline {
+  padding: 102px 0 62px 0;
+
+  .header-text {
+    padding-top: 62px;
+  }
+}
