@@ -59,7 +59,7 @@
 
     &.active > a {
       background-color: transparent;
-      color: #5050FF;
+      color: $pink;
     }
   }
 
@@ -69,7 +69,7 @@
     background-color: transparent;
 
     .icon-bar {
-      background: #5050FF;
+      background: $pink;
       border-color: transparent;
     }
   }

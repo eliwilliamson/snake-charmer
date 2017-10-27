@@ -40,7 +40,7 @@ section {
 }
 
 a {
-  color: #5050FF;
+  color: $pink;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -94,7 +94,7 @@ a:hover, a:active, a:focus {
 }
 
 .headline {
-  padding: 102px 0 62px 0;
+  padding: $medium 0;
 
   .header-text {
     padding-top: 62px;

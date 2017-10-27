@@ -164,7 +164,7 @@ img.responsive {
     text-decoration: none;
     font-weight: $light;
     color: $grey;
-    width: 1$micro;
+    width: 18px;
     font-size: $tiny;
     padding: $micro;
     border-radius: 99px;
@@ -271,7 +271,7 @@ img.responsive {
 
   p {
     margin: 0;
-    font-size: 1$micro;
+    font-size: 18px;
     font-weight: $regular;
     line-height: 2$micro;
     color: $lightGrey;
@@ -321,4 +321,20 @@ img.responsive {
     top: 10px;
     cursor: pointer;
   }
+}
+
+.tag {
+  background: $lightGrey;
+  color: white;
+  clear: left;
+  float: left;
+  font-family: 'Helvetica Neue', "Helvetica", helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: $black;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-radius: 999px;
+  display: inline-block;
+  padding: 4px $micro;
+  margin: 0 0 4px 0;
 }

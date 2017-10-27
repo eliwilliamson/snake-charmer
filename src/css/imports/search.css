@@ -212,7 +212,7 @@
       text-transform: capitalize;
       color: $navy;
       font-weight: $regular;
-      font-size: 1$micro;
+      font-size: 18px;
       line-height: 22px;
       text-decoration: none;
       transition: color .2s ease;

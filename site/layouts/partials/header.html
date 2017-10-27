@@ -1,5 +1,5 @@
 {{ partial "head" . }}
-<div class="page">
+<div class="page{{ if .Params.bodyclass }} {{ .Params.bodyclass }}{{ end }}">
 <header id="header" class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
 

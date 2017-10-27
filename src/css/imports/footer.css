@@ -7,9 +7,11 @@ footer {
   text-align: left;
 
   p {
+    color: lighten($grey, 50%);
     font-size: 14px;
     padding-top: 6px;
   }
+
   span {
     display: inline-block;
     padding: 0 4px 0 4px;

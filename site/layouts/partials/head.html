@@ -2,6 +2,8 @@
 <html
   {{ if eq .Title .Site.Title }}
     id='landing'
+  {{ else if .Params.client }}
+    id="work"
   {{ else }}
     id='{{ .Title }} | Dusk Digital'
   {{ end }}

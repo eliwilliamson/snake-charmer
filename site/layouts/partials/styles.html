@@ -4,11 +4,8 @@
 
 {{ if isset .Params "styleoverrides" }}
   <link rel="stylesheet" href="{{ .Params.styleoverrides }}"/>
-{{ else if or (eq .Title "Blog") (eq .Section "blog") }}
-  <link rel="stylesheet" href="{{ .Site.Data.blog.styleoverrides }}"/>
-{{ else if eq .Title "404 Page not found" }}
-  <link rel="stylesheet" href="/404.css"/>
+{{ else if or (eq .Title "Work") (eq .Section "work") }}
+  <link rel="stylesheet" href="/css/work.css"/>
 {{ else if .IsHome }}
-  <!-- landing page doesn't have a local styleoverides variable -->
   <link rel="stylesheet" href="{{ .Site.Data.landing.styleoverrides }}"/>
 {{ end }}

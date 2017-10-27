@@ -1,5 +1,0 @@
-<a href="{{ .linksto }}" class='{{ if eq .type "primary" }}btn-primary{{ else if eq .type "secondary" }}btn-secondary{{ else if eq .type "urgent" }}btn-urgent{{ end }}'>{{ .btntext | markdownify }}</a>
-
-{{ if .btnsubtext}}
-<p class="btn-subtext">{{ .btnsubtext | markdownify }}</p>
-{{ end }}

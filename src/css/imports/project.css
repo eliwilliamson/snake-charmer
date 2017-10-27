@@ -4,6 +4,12 @@
   top: 0;
   bottom: 0;
   transition: all ease-in-out 0.4s;
+
+  &:hover {
+    background: white;
+    box-shadow: 0px $tiny 22px 0px rgba(90, 91, 95, 0.3);
+    top: -5px;
+  }
 }
 
 .project-overlay {
@@ -12,6 +18,7 @@
     font-weight: normal;
     margin-top: 6px;
   }
+
   h4 {
     color: #858585;
     font-size: 10px;
@@ -19,24 +26,70 @@
     text-transform: uppercase;
     margin-bottom: 0px;
   }
+
+  p {
+    $font-size: 14px;
+    $line-height: 22px;
+    $lines-to-show: 3;
+
+    display: block;
+    display: -webkit-box;
+    font-weight: $regular;
+    font-size: $font-size;
+    line-height: $line-height;
+    max-width: 100%;
+    height: calc($font-size * $line-height * $lines-to-show);
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.project-item:hover {
-  background: white;
-  box-shadow: 0px $tiny 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
 
 #project .project-overlay {
-  padding: 12px 0 26px 12px;
+  padding: $tiny 0 0 0;
 }
 
 .project-detail-text {
   padding: 62px 82px;
+
+  p {
+    line-height: $medium;
+    font-family: "leitura_newsroman", Georgia, Cambria, "Times New Roman", Times, serif;
+
+    b em,
+    em b {
+      font-family: "leitura_newsitalic_bold", Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+
+    strong,
+    b {
+      font-family: "leitura_newsroman_bold", Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+
+    em {
+      font-family: "leitura_newsitalic", Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+  }
+
+  strong,
+  b,
+  a {
+    font-weight: $regular;
+  }
 }
 
 .project-detail-info {
   padding: 12px 0 62px 0;
+
+  p {
+    font-weight: $bold;
+  }
+
   h3:last-child {
     margin-top: 0;
   }

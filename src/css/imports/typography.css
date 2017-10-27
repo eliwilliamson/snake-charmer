@@ -87,7 +87,7 @@ h3 {
 
 h4 {
   color: #505050;
-  font-size: 1$micro;
+  font-size: 18px;
   letter-spacing: 0.5px;
 }
 
@@ -99,9 +99,9 @@ h5 {
 }
 
 p {
-  color: #959595;
+  color: $grey;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: $light;
   line-height: 30px;
   letter-spacing: 0.5px;
 }
