@@ -1,36 +1,69 @@
-.about-info {
-  text-align: center;
-  padding: 62px 0 42px 0;
-}
+@import "imports/clients.css";
 
-.about-info h1 {
-  padding-bottom: 6px;
-}
+#about {
+  .about-info {
+    text-align: center;
+    padding: 62px 0 42px 0;
 
-.about-info:after {
-  content: "";
-  background: #000;
-  width: 14%;
-  height: 2px;
-  position: relative;
-  display: block;
-  margin: 22px auto 0 auto;
-}
+    &:after {
+      content: "";
+      background: $pink;
+      width: 14%;
+      height: 2px;
+      position: relative;
+      display: block;
+      margin: 22px auto 0 auto;
+    }
 
-.about-service-text {
-  padding: 62px 0;
-}
+    h1 {
+      padding-bottom: 6px;
+    }
+  }
 
-.about-service-text .section-title {
-  padding-bottom: 0px;
-}
+  .about-image {
+    &:before,
+    &:after {
+      position: absolute;
+      top: -160px;
+    }
 
-.about-service-text ul li {
-  color: #575757;
-  list-style: square;
-  font-size: 1$micro;
-  font-weight: 300;
-  line-height: 26px;
-  letter-spacing: 0.5px;
-  padding: 2px 0;
+    &:before {
+      content: '';
+      border: $micro solid $pink;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      right: 210px;
+    }
+
+    &:after {
+      content: '×';
+      color: $pink;
+      font-family: 'Helvetica Neue', "Helvetica", helvetica, sans-serif;
+      font-size: $large;
+      font-weight: $black;
+      line-height: 0;
+      right: 190px;
+      top: -180px;
+      animation: rotate 20s infinite linear;
+    }
+  }
+
+  .about-service-text {
+    padding: 62px 0;
+
+    .section-title {
+      padding-bottom: 0px;
+    }
+
+    ul li {
+      color: #575757;
+      list-style: square;
+      font-size: 1$micro;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      padding: 2px 0;
+    }
+  }
 }

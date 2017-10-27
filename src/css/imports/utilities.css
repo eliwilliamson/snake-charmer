@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.container {
+.contained {
   @neat-outer-container;
 }
 
