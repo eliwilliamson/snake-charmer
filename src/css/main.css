@@ -47,25 +47,72 @@
 }
 
 
-@media (max-width: 76$micro) {
-
+@media (max-width: 768px) {
   .navbar-default {
-    background-color: white;
-    box-shadow:0 $medium 100px rgba(0,0,0,.2);
-    padding-top: 0;
+    background-color: rgba(255,255,255,0.98);
+    padding-top: $tiny;
+  }
+
+  .headline {
+    padding: 0;
+    margin: $large auto;
+  }
+
+  #project-detail {
+    margin-top: $large;
+  }
+
+  #bottom-cta {
+    padding: 0 0;
   }
 }
 
 
 @media (max-width: 767px) {
 
-  .navbar-default .navbar-brand {
-    line-height: 15px;
+  .navbar-default {
+    .nav li a {
+      background: none;
+      text-align: center;
+      font-size: $medium;
+      line-height: 50px;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    .navbar-toggle {
+      border-radius: 0;
+      transition: background-color .2s ease;
+
+      &:focus,
+      &:active {
+        background-color: white;
+      }
+
+      &:hover {
+        background-color: $grey;
+
+        span {
+          background: white;
+        }
+      }
+
+      span {
+        transition: background-color .2s ease;
+      }
+    }
   }
 
-  .navbar-default .nav li a {
-    line-height: 15px;
+  .navbar-collapse {
+    border-top: 0;
+    box-shadow: none;
+    height: calc(100vh - 82px);
+    padding-top: $large;
   }
+
 
   #home {
     height: 65vh;

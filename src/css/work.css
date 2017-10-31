@@ -8,15 +8,46 @@
     line-height: $medium;
     text-indent: -12px;
     max-width: 800px;
+
+    @media (max-width: 767px) {
+      font-size: $tiny;
+      padding: $tiny $tiny 0 $tiny;
+      text-indent: -$micro;
+      line-height: $small;
+    }
   }
 
   .attribution {
     font-family: 'Helvetica Neue', "Helvetica", helvetica, sans-serif;
     font-size: $tiny;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
   }
 
-  #project .row:not(:first-child) {
-    margin-top: $large;
+  #project .row {
+
+    &:after {
+      @media (max-width: 980px) {
+        clear: none;
+        display: inline;
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: $large;
+
+      @media (max-width: 980px) {
+        margin-top: 0;
+      }
+    }
+
+    > .col-sm-6 {
+      @media (max-width: 980px) {
+        margin-bottom: $medium;
+      }
+    }
   }
 
   #project-detail-links {
@@ -24,6 +55,7 @@
     padding: 82px 0 102px 0;
     margin-bottom: 0;
     transition: background .2s ease;
+
 
     &:hover {
       background: $pink;
@@ -42,11 +74,31 @@
       color: white;
       font-size: 32px;
       text-decoration: none;
+
+      @media (max-width: 767px) {
+        font-size: $small;
+      }
     }
   }
 
   .screenshot {
     padding: 0;
+  }
+
+  #project-detail {
+    @media (max-width: 980px) {
+      width: 100vw;
+
+      > .container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -58,6 +110,10 @@
 .jamstack {
   .screenshot:not(:first-child) {
     width: 50%;
+
+    @media (max-width: 767px) {
+      float: left;
+    }
   }
 }
 

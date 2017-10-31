@@ -10,8 +10,19 @@
     position: relative;
     padding-top: 235px;
 
-    h1 span:first-child {
-      display: block;
+    @media (max-width: 767px) {
+      padding-top: 200px;
+    }
+
+    h1 {
+      @media (max-width: 767px) {
+        font-size: $small;
+        line-height: 30px;
+      }
+
+      span:first-child {
+        display: block;
+      }
     }
 
     #rotating-text.clip {
@@ -74,7 +85,6 @@
     display: flex;
     flex-direction: row-reverse;
 
-
     .circle {
       background: $lightestGrey;
       border-radius: 50%;
@@ -83,6 +93,10 @@
       position: fixed;
       width: $xxl;
       z-index: -1;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 }

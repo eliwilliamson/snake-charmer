@@ -70,9 +70,20 @@
 .project-detail-text {
   padding: 62px 82px;
 
+  @media (max-width: 767px) {
+    clear: both;
+    padding: $medium $tiny $small $tiny;
+  }
+
+
   p {
     line-height: $medium;
     font-family: "leitura_newsroman", Georgia, Cambria, "Times New Roman", Times, serif;
+
+    @media (max-width: 767px) {
+      font-size: $tiny;
+      line-height: 30px;
+    }
 
     b em,
     em b {
@@ -98,6 +109,12 @@
 
 .project-detail-info {
   padding: 12px 0 62px 0;
+
+  @media (max-width: 767px) {
+    clear: both;
+    display: table;
+    padding-bottom: 0;
+  }
 
   p {
     font-weight: $bold;

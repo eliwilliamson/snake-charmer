@@ -40,6 +40,12 @@
       padding-right: 0;
     }
   }
+
+  .col-sm-4 {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
   input {
     height: 45px;
     line-height: 45px;

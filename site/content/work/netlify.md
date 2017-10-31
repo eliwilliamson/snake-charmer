@@ -5,7 +5,7 @@ website: netlify.com
 title: "Write frontend code. Push it. Let Netlify handle the rest."
 featuredImageFile: "/img/work/netlify-thumb.jpg"
 quote: "Netlify basically initiates its own kind of repository that pushes both to a Github repository and its own services. ... Netlify then distributes all those static sites across its own content delivery network, meaning that when visitors access those pages they are pre-built."
-attribution: "**Mathew Lynley**, writer at TechCrunch"
+attribution: "**Mathew Lynley**, Writer at TechCrunch"
 images:
   - url: "/img/work/netlify-1.jpg"
   - url: "/img/work/netlify-4.jpg"
