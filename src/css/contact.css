@@ -28,17 +28,15 @@
       border-color: $pink;
     }
   }
-  .col-sm-4,
-  .col-md-12 {
-    &:nth-child(3),
-    &:nth-child(6),
-    &:nth-child(7) {
-      padding-left: 0;
-    }
-    &:nth-child(5),
-    &:nth-child(6) {
-      padding-right: 0;
-    }
+
+  .name-input,
+  .message-input,
+  .submit-input {
+    padding-left: 0;
+  }
+  .subject-input,
+  .message-input {
+    padding-right: 0;
   }
 
   .col-sm-4 {
