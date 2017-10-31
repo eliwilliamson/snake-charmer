@@ -9,9 +9,23 @@
    }
 }
 
+.error-message,
+.thank-you-message {
+  h1 {
+    font-size: $large;
+    line-height: $xl;
+  }
+
+  strong {
+    display: block;
+    font-size: $xl;
+  }
+}
+
 .error-message {
   padding-top: $xl;
-  padding-bottom: $xl;
+  padding-bottom: 0;
+  margin-bottom: -$xl;
 
   strong {
     color: $pink;
