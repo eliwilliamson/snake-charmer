@@ -29,47 +29,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <!-- SECTION TITLE -->
         <div class="section-title">
           <h1>Featured Projects</h1>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <!-- PROJECT ITEM -->
-        <div class="project-item">
-          <a href="project-detail.html">
-            <img src="/img/global/project-image1.jpg" class="img-responsive" alt="">
-          </a>
+      {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "work") }}
+        <div class="col-md-4 col-sm-4">
+          <div class="project-item">
+            <a href="{{ .Permalink }}">
+              <img src="{{ .Params.featuredImageFile }}" class="img-responsive" alt="{{ .Params.client }}">
+            </a>
+          </div>
+          <div class="project-overlay">
+            <h3>{{ .Params.client }}</h3>
+          </div>
         </div>
-        <div class="project-overlay">
-          <!-- <h4>Graphic Design</h4> -->
-          <h3>Banana Noolab</h3>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4">
-        <!-- PROJECT ITEM -->
-        <div class="project-item">
-          <a href="project-detail.html">
-            <img src="/img/global/project-image2.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-        <div class="project-overlay">
-          <!-- <h4>Photoshop Mockup</h4> -->
-          <h3>Apple Magic Store</h3>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4">
-        <!-- PROJECT ITEM -->
-        <div class="project-item">
-          <a href="project-detail.html">
-            <img src="/img/global/project-image3.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-        <div class="project-overlay">
-          <!-- <h4>Visual Idenity</h4> -->
-          <h3>Orange Juice</h3>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>

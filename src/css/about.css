@@ -1,6 +1,10 @@
 @import "imports/clients.css";
 
 #about {
+  .logo {
+    margin-left: -6px;
+  }
+
   .about-info {
     text-align: center;
     padding: 62px 0 42px 0;

@@ -1,4 +1,12 @@
 #contact {
+  .logo {
+    margin-left: -6px;
+  }
+
+  .headline h2 {
+    max-width: 550px;
+  }
+
   .text-success, .text-danger {
     display: none;
     padding: 0 0 5px 20px;

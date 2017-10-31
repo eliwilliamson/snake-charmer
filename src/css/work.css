@@ -1,11 +1,13 @@
 @import "imports/project.css";
 
 #work {
+
   .quote {
     font-family: "leitura_newsitalic", Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: $small;
     line-height: $medium;
     text-indent: -12px;
+    max-width: 800px;
   }
 
   .attribution {
@@ -13,10 +15,14 @@
     font-size: $tiny;
   }
 
+  #project .row:not(:first-child) {
+    margin-top: $large;
+  }
+
   #project-detail-links {
-    background: $grey;
+    background: lighten($grey, 10%);
     padding: 82px 0 102px 0;
-    margin-top: 102px;
+    margin-bottom: 0;
     transition: background .2s ease;
 
     &:hover {
@@ -38,10 +44,23 @@
       text-decoration: none;
     }
   }
+
+  .screenshot {
+    padding: 0;
+  }
 }
 
-.christ-college {
+.christ-college,
+.jeet,
+.groove,
+.netlify,
+.eureka,
+.jamstack {
   .screenshot:not(:first-child) {
     width: 50%;
   }
+}
+
+.groove .screenshot:nth-child(4) {
+  width: 100%;
 }

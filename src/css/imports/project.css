@@ -1,22 +1,35 @@
 .project-item {
+  background: $grey;
+  border: 0 solid $pink;
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
   top: 0;
   bottom: 0;
-  transition: all ease-in-out 0.4s;
+  transition: border linear .1s;
 
   &:hover {
-    background: white;
-    box-shadow: 0px $tiny 22px 0px rgba(90, 91, 95, 0.3);
-    top: -5px;
+    border: 4px solid $pink;
+
+    img {
+      border: $tiny solid white;
+    }
+  }
+
+  img {
+    border: 0 solid white;
+    box-sizing: border-box;
+    transition: border linear .1s;
   }
 }
 
 .project-overlay {
   h3 {
-    color: #454545;
+    color: $grey;
     font-weight: normal;
-    margin-top: 6px;
+    margin-top: $micro;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   h4 {
@@ -30,7 +43,7 @@
   p {
     $font-size: 14px;
     $line-height: 22px;
-    $lines-to-show: 3;
+    $lines-to-show: 2;
 
     display: block;
     display: -webkit-box;

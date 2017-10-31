@@ -99,4 +99,12 @@ a:hover, a:active, a:focus {
   .header-text {
     padding-top: 62px;
   }
+
+  h2:not(.quote):after {
+    background: white;
+    color: $pink;
+    content: '.';
+    position: relative;
+    left: -10px;
+  }
 }

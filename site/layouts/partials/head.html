@@ -5,7 +5,7 @@
   {{ else if .Params.client }}
     id="work"
   {{ else }}
-    id='{{ .Title }} | Dusk Digital'
+    id='{{ .Title | lower }}'
   {{ end }}
 >
   <head>
