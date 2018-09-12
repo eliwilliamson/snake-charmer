@@ -6,14 +6,13 @@
   position: relative;
   top: 0;
   bottom: 0;
-  transition: border linear .1s;
+  border-radius: $smallBorderRadius;
+  box-shadow: 1px 2px $micro 0 rgba(0,0,0,0.10);
+  transition: box-shadow linear .2s, transform linear .2s;
 
   &:hover {
-    border: 4px solid $pink;
-
-    img {
-      border: $tiny solid white;
-    }
+    transform: translateY(-$micro);
+    box-shadow: 1px $tiny $medium 0 rgba(0,0,0,0.20);
   }
 
   img {
