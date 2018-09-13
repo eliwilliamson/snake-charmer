@@ -5,16 +5,19 @@ is_partial: false
 fields:
 - type: text
   name: title
-  label: Name
-  description: What is this person's full name?
+  label: First Name
+  description: What is this person's first name?
   config:
     required: true
-- type: text
+- type: textarea
   name: position
-  label: Position
-  description: What is this person's job title?
+  label: Job Title
+  description: What is their job title?
   config:
     required: true
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: file
   name: photo
   label: Portrait Photo
