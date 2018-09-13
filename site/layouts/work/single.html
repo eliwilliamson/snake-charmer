@@ -21,7 +21,7 @@
     <div class="row">
       {{ range .Params.images }}
         <div class="col-md-12 col-sm-12 screenshot">
-          <img src="{{ .url }}" class="img-responsive" alt="image">
+          <img src="{{ . }}" class="img-responsive" alt="image">
         </div>
       {{ end }}
       <div class="col-md-12 col-sm-12">
