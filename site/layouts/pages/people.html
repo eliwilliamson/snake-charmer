@@ -13,56 +13,30 @@
 <section id="people">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="people-item">
-          <img src="/img/people/eli.jpg" class="img-responsive" alt="Eli">
-          <div class="people-overlay">
-            <ul class="social-icon">
-              <li><a href="https://twitter.com/eliwilliamson" class="fa fa-twitter"></a></li>
-              <li><a href="https://dribbble.com/eliwilliamson" class="fa fa-dribbble"></a></li>
-              <li><a href="mailto:eliwilliamson@gmail.com" class="fa fa-envelope-o"></a></li>
-            </ul>
+      {{ range where .Site.RegularPages.ByWeight "Section" "people" }}
+        <div class="col-md-3 col-sm-6">
+          <div class="people-item">
+            <img src="{{ .Params.photo }}" class="img-responsive" alt="{{ .Params.title }}">
+            <div class="people-overlay">
+              <ul class="social-icon">
+                {{ range .Params.links }}
+                  {{ if in . "twitter "}}
+                    <li><a href="{{ . }}" class="fa fa-twitter"></a></li>
+                  {{ else if in . "dribbble" }}
+                    <li><a href="{{ . }}" class="fa fa-dribbble"></a></li>
+                  {{ else if in . "instagram" }}
+                    <li><a href="{{ . }}" class="fa fa-instagram"></a></li>
+                  {{ else if in . "mail" }}
+                    <li><a href="{{ . }}" class="fa fa-envelope-o"></a></li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
           </div>
+          <p>{{ .Params.title }}</p>
+          <h3>{{ .Params.position | markdownify }}</h3>
         </div>
-        <p>Eli</p>
-        <h3>Co-owner &amp;<br>Creative Developer</h3>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="people-item">
-          <img src="/img/people/bre.jpg" class="img-responsive" alt="Breanna">
-          <div class="people-overlay">
-            <ul class="social-icon">
-              <li><a href="https://www.instagram.com/breawilli/" class="fa fa-instagram"></a></li>
-            </ul>
-          </div>
-        </div>
-        <p>Breanna</p>
-        <h3>Co-owner &amp;<br>Designer</h3>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="people-item">
-          <img src="/img/people/ziggy.jpg" class="img-responsive" alt="Ziggy">
-          <div class="people-overlay">
-            <ul class="social-icon">
-              <li><a href="https://www.instagram.com/ziggy.williamson/" class="fa fa-instagram"></a></li>
-            </ul>
-          </div>
-        </div>
-        <p>Ziggy</p>
-        <h3>Designer &amp<br>Illustrator</h3>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="people-item">
-          <img src="/img/people/jen.jpg" class="img-responsive" alt="Jen">
-          <div class="people-overlay">
-            <ul class="social-icon">
-              <li><a href="mailto:info@justdusk.com" class="fa fa-envelope-o"></a></li>
-            </ul>
-          </div>
-        </div>
-        <p>Jen</p>
-        <h3>Content Strategist<br>&amp Editor</h3>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
