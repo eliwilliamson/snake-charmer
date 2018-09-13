@@ -70,5 +70,11 @@ fields:
   name: tags
   label: Tags
   description: Related terms for SEO and display.
+- type: number
+  name: weight
+  label: Order
+  description: Starts at 1, goes left to right, top to bottom
+  config:
+    required: true
 pages:
 - site/content/work/biz-me.md
