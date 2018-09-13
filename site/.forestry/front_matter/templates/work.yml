@@ -4,6 +4,12 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
+  name: client
+  label: Client Name
+  description: The name of the company (eg. Cincinnati Mine Machinery Co.)
+  config:
+    required: true
+- type: text
   name: bodyclass
   label: Page Class Name
   description: This will be added to the body (eg. cmmc).
@@ -16,15 +22,9 @@ fields:
   config:
     required: true
 - type: text
-  name: client
-  label: Client Name
-  description: The name of the company (eg. Cincinnati Mine Machinery Co.)
-  config:
-    required: true
-- type: text
   name: website
   label: Website
-  description: Link to their website (eg. www.cinmine.com)
+  description: Link to their website (eg. cinmine.com - no need for https://www)
   config:
     required: true
 - type: file
