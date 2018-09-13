@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: directory
   path: site/content/work
@@ -10,17 +10,17 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: site/content/pages
-  label: Pages
+  path: site/content/people
+  label: Employees
   create: all
   match: "**/*"
 - type: directory
-  path: site/content
-  label: Pages
+  path: site/content/pages
+  label: All Pages
   create: all
-  match: "*"
-upload_dir: site//static/uploads
-public_path: "/uploads"
+  match: "**/*"
+upload_dir: site/src/img
+public_path: "/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
