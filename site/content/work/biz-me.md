@@ -38,6 +38,5 @@ tags:
 - Content Calendars
 - Branding
 - Mobile Reponsive
-draft: true
 
 ---
