@@ -3,7 +3,7 @@ title: Building a newsletter to 1 million weekly subscribers.
 date: 2018-09-13 16:59:17 +0000
 bodyclass: biz-me
 client: Biz.me
-website: https://www.biz.me
+website: biz.me
 featuredImageFile: "/img/biz-me.jpg"
 quote: Our experience with DUSK has been nothing short of stellar. Their design and
   development team made the inception, creation, and development of the site so easy.
@@ -18,12 +18,7 @@ images:
 - "/img/art-half-width copy.jpg"
 - "/img/art-half-width.jpg"
 - "/img/art-full-width copy 2.jpg"
-description: With over 1 million weekly subscribers, we were successful in creating
-  a content publishing platform with email newsletter distribution for this vast collection
-  of business owners. After completing the branding, design and development of this
-  site, we helped Biz.me continue to create, edit, and publish content - including
-  copywriting, copy editing, and custom illustrations. Check it out for yourself at
-  [Biz.me](https://www.biz.me "Biz.me")!
+description: With **over 1 million weekly subscribers**, we were successful in creating a content publishing platform with email newsletter distribution for this vast collection of business owners. After completing the branding, design and development of this site, we helped Biz.me continue to create, edit, and publish content - including copywriting, copy editing, and custom illustrations.
 tags:
 - Front-end / HTML & CSS
 - Web Design
@@ -37,6 +32,6 @@ tags:
 - Copy Editing
 - Content Calendars
 - Branding
-- Mobile Reponsive
+- Mobile Responsive
 
 ---

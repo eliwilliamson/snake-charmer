@@ -20,7 +20,11 @@
   <div class="container">
     <div class="row">
       {{ range .Params.images }}
-        <div class="col-md-12 col-sm-12 screenshot">
+        {{ if in . "half"}}
+          <div class="col-md-6 col-sm-6 screenshot">
+        {{ else }}
+          <div class="col-md-12 col-sm-12 screenshot">
+        {{ end }}
           <img src="{{ . }}" class="img-responsive" alt="image">
         </div>
       {{ end }}

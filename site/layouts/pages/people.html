@@ -20,7 +20,7 @@
             <div class="people-overlay">
               <ul class="social-icon">
                 {{ range .Params.links }}
-                  {{ if in . "twitter "}}
+                  {{ if in . "twitter"}}
                     <li><a href="{{ . }}" class="fa fa-twitter"></a></li>
                   {{ else if in . "dribbble" }}
                     <li><a href="{{ . }}" class="fa fa-dribbble"></a></li>
