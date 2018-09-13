@@ -59,21 +59,11 @@
 
 {{ partial "bottom-cta" . }}
 
-{{ if .NextInSection }}
-  <a href="{{ .NextInSection.Permalink }}" alt="{{ .NextInSection.Params.client }}">
-    <section id="project-detail-links">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <h3>Next Project</h3>
-            <p>{{ .NextInSection.Params.client }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </a>
-{{ else }}
-  {{$posts := ($.Site.GetPage "section" "work").Pages.ByPublishDate.Reverse}}
+{{ $length := len (where .Site.RegularPages "Section" "==" "work") }}
+{{ $posts := ($.Site.GetPage "section" "work").Pages.ByWeight }}
+{{ $weight := .Params.weight }}
+
+{{ if eq $weight $length }}
   {{ range first 1 $posts }}
     <a href="{{ .Permalink }}" alt="{{ .Params.client }}">
       <section id="project-detail-links">
@@ -87,6 +77,23 @@
         </div>
       </section>
     </a>
+  {{ end }}
+{{ else }}
+  {{ range $index, $id := $posts }}
+    {{ if eq $index $weight }}
+      <a href="{{ .Permalink }}" alt="{{ .Params.client }}">
+        <section id="project-detail-links">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <h3>Next Project</h3>
+                <p>{{ .Params.client }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </a>
+    {{ end }}
   {{ end }}
 {{ end }}
 

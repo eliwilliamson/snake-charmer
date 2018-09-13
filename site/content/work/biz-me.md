@@ -12,6 +12,7 @@ quote: Our experience with DUSK has been nothing short of stellar. Their design 
   HIGHLY recommend them.
 undefined: ''
 attribution: "**Ohad Eder-Pressman**, Owner & CEO of Biz.me"
+weight: 1
 images:
 - "/img/art-full-width.jpg"
 - "/img/art-full-width copy.jpg"

@@ -10,6 +10,10 @@
   box-shadow: 1px 2px $micro 0 rgba(0,0,0,0.10);
   transition: box-shadow linear .2s, transform linear .2s;
 
+  @media (min-width: $tablet) {
+    max-width: 350px;
+  }
+
   &:hover {
     transform: translateY(-$micro);
     box-shadow: 1px $tiny $medium 0 rgba(0,0,0,0.20);

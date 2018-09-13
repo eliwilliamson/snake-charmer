@@ -6,6 +6,7 @@ website: "cinmine.com"
 featuredImageFile: "/img/work/cmmc-thumb.jpg"
 quote: "Eli helped guide us through the unchartered waters of creating a versatile online presence accross a number of devices. We are thankful for his help all along the way, it was much appreciated and a good learning experience for us all – even after we launched, he has continued to share analytics and insights to help us continue improving our customer's experience."
 attribution: "**Tony Stenger**, Purchasing Manager for Cincinnati Mine Machinery Co."
+weight: 6
 images:
 - "/img/work/cmmc-featured.png"
 - "/img/work/cmmc-1.png"
