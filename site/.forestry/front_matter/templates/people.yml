@@ -2,4 +2,32 @@
 label: People
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: name
+  label: Name
+  description: What is this person's full name?
+  config:
+    required: true
+- type: text
+  name: position
+  label: Position
+  description: What is this person's job title?
+  config:
+    required: true
+- type: file
+  name: photo
+  label: Portrait Photo
+  description: Upload their picture here
+  config:
+    maxSize: '4'
+- type: list
+  name: links
+  label: Links
+  description: Social media links and email links.
+  config:
+    min: '1'
+    max: '4'
+    use_select: false
+    source:
+      type: datafiles
