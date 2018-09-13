@@ -34,3 +34,10 @@ fields:
     use_select: false
     source:
       type: datafiles
+- type: number
+  name: weight
+  label: Order
+  config:
+    step: '1'
+  description: In what order do you want this person to appear relative to the other
+    people?
