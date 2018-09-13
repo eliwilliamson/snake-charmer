@@ -2,7 +2,8 @@
 title: Tanner
 weight: 5
 position: Developer
-photo: /img/people/tanner.jpg
+photo: "/img/IMG_9574.jpg"
 links:
-  - mailto:info@justdusk.com
+- mailto:info@justdusk.com
+
 ---
