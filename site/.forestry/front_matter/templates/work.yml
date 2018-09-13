@@ -70,3 +70,5 @@ fields:
   name: tags
   label: Tags
   description: Related terms for SEO and display.
+pages:
+- site/content/work/biz-me.md
