@@ -14,9 +14,9 @@ undefined: ''
 attribution: "**Ohad Eder-Pressman**, Owner & CEO of Biz.me"
 images:
 - "/img/art-full-width.jpg"
+- "/img/art-full-width copy.jpg"
 - "/img/art-half-width copy.jpg"
 - "/img/art-half-width.jpg"
-- "/img/art-full-width copy.jpg"
 - "/img/art-full-width copy 2.jpg"
 description: With over 1 million weekly subscribers, we were successful in creating
   a content publishing platform with email newsletter distribution for this vast collection
