@@ -2,7 +2,8 @@
 title: Nate
 weight: 4
 position: Illustrator
-photo: /img/people/nate.jpg
+photo: "/img/nate.jpg"
 links:
-  - mailto:info@justdusk.com
+- mailto:info@justdusk.com
+
 ---
