@@ -3,7 +3,7 @@ label: Work
 hide_body: false
 fields:
 - type: text
-  name: client
+  name: title
   label: Client Name
   description: The name of the company (eg. Cincinnati Mine Machinery Co.)
   config:
@@ -15,7 +15,7 @@ fields:
   config:
     required: true
 - type: text
-  name: title
+  name: headline
   label: Headline
   description: This will show up at the top of the work detail page.
   config:
