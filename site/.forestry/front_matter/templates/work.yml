@@ -1,7 +1,6 @@
 ---
 label: Work
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: client
@@ -42,7 +41,6 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-- type: text
 - type: textarea
   name: attribution
   label: Attribution
@@ -77,4 +75,5 @@ fields:
   config:
     required: true
 pages:
+- site/content/work/enter-real-world-react.md
 - site/content/work/biz-me.md
