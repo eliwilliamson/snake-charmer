@@ -16,14 +16,14 @@
         <div class="col-md-4 col-sm-6">
           <div class="project-item">
             <a href="{{ .Permalink }}">
-              <img src="{{ .Params.featuredImageFile }}" class="img-responsive" alt="{{ .Params.client }}">
+              <img src="{{ .Params.featuredImageFile }}" class="img-responsive" alt="{{ .Params.title }}">
             </a>
           </div>
           <div class="project-overlay">
             <!-- {{ range .Params.roles }}
               <h4 class="tag">{{ . | markdownify }}</h4>
             {{ end }} -->
-            <h3>{{ .Params.client }}</h3>
+            <h3>{{ .Params.title }}</h3>
             <p>{{ .Params.description | markdownify }}</p>
           </div>
         </div>

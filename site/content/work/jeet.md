@@ -1,13 +1,13 @@
 ---
 bodyclass: jeet
-client: Jeet.gs
+title: Jeet.gs
 website: Jeet.gs
-title: Jeet Grid System
+headline: Jeet Grid System
 featuredImageFile: "/img/work/jeet-thumb.jpg"
 quote: Jeet is sleek, simple and to the point. I think they showcase the grid system
   semantically and intuitively. The use of SVG's is nice.
 attribution: "**Carl Stanton**, Huge Inc."
-weight: 7
+weight: 0
 images:
 - url: "/img/work/jeet-featured.png"
 - url: "/img/work/jeet-1.png"

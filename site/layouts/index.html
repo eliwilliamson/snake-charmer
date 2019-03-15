@@ -33,15 +33,15 @@
           <h1>Featured Projects</h1>
         </div>
       </div>
-      {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "work") }}
+      {{ range first 3 (where .Site.RegularPages.ByWeight "Section" "work") }}
         <div class="col-md-4 col-sm-4">
           <div class="project-item">
             <a href="{{ .Permalink }}">
-              <img src="{{ .Params.featuredImageFile }}" class="img-responsive" alt="{{ .Params.client }}">
+              <img src="{{ .Params.featuredImageFile }}" class="img-responsive" alt="{{ .Params.title }}">
             </a>
           </div>
           <div class="project-overlay">
-            <h3>{{ .Params.client }}</h3>
+            <h3>{{ .Params.title }}</h3>
           </div>
         </div>
       {{ end }}

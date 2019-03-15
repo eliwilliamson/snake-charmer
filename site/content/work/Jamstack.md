@@ -1,12 +1,12 @@
 ---
 bodyclass: "jamstack"
-client: "JAMstack"
+title: "JAMstack"
 website: jamstack.org
-title: "Pump up the JAM with Javascript, APIs, and Markup."
+headline: "Pump up the JAM with Javascript, APIs, and Markup."
 featuredImageFile: "/img/work/jamstack-thumb.jpg"
 quote: "When we talk about 'The Stack', we no longer talk about operating systems, specific web servers, backend programming languages, or databases. The JAMstack is not about specific technologies. It’s a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience."
 attribution: "**Chris Bach**, Co-founder of Netlify"
-weight: 3
+weight: 6
 images:
 - "/img/work/jamstack-1.jpg"
 - "/img/work/jamstack-4.jpg"

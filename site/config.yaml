@@ -4,3 +4,5 @@ title: "DUSK Digital"
 disable404: false
 metaDataFormat: "yaml"
 pluralizeListTitles: false
+permalinks:
+  work: /work/:title

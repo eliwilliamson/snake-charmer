@@ -1,7 +1,7 @@
 ---
-client: Real World React
+title: Real World React
 bodyclass: rwr
-title: Enter Real World React.
+headline: Enter Real World React.
 website: realworldreact.com
 featuredImageFile: "/img/thumb-1.jpg"
 quote: ''
@@ -24,7 +24,7 @@ tags:
 - iconography
 - jamstack development
 - interaction design
-weight: -1
+weight: 3
 date: 2019-03-15 03:14:59 +0000
 
 ---

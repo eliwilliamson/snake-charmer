@@ -1,7 +1,7 @@
 ---
-client: Reactathon
+title: Reactathon
 bodyclass: reactathon
-title: From digital to print, we helped Reactathon knock it out of the park this year.
+headline: From digital to print, we helped Reactathon knock it out of the park this year.
 website: reactathon.com
 featuredImageFile: "/img/thumb-2.jpg"
 quote: ''
@@ -29,7 +29,7 @@ tags:
 - jamstack development
 - hugo
 - golang
-weight: -2
+weight: 2
 date: 2019-03-15 04:34:38 +0000
 
 ---

@@ -9,7 +9,7 @@
         </div>
       {{ else }}
         <div class="col-md-8 col-sm-12">
-          <h2>{{ .Title }}</h2>
+          <h2>{{ .Params.headline }}</h2>
         </div>
       {{ end }}
     </div>
@@ -43,7 +43,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="project-detail-info">
             <p>Client</p>
-            <h3>{{ .Params.client }}</h3>
+            <h3>{{ .Params.title }}</h3>
           </div>
         </div>
         <div class="col-md-3 col-sm-4">
@@ -65,13 +65,13 @@
 
 {{ if eq $weight $length }}
   {{ range first 1 $posts }}
-    <a href="{{ .Permalink }}" alt="{{ .Params.client }}">
+    <a href="{{ .Permalink }}" alt="{{ .Params.title }}">
       <section id="project-detail-links">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <h3>Next Project</h3>
-              <p>{{ .Params.client }}</p>
+              <p>{{ .Params.title }}</p>
             </div>
           </div>
         </div>
@@ -81,13 +81,13 @@
 {{ else }}
   {{ range $index, $id := $posts }}
     {{ if eq $index $weight }}
-      <a href="{{ .Permalink }}" alt="{{ .Params.client }}">
+      <a href="{{ .Permalink }}" alt="{{ .Params.title }}">
         <section id="project-detail-links">
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12">
                 <h3>Next Project</h3>
-                <p>{{ .Params.client }}</p>
+                <p>{{ .Params.title }}</p>
               </div>
             </div>
           </div>

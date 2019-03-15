@@ -2,8 +2,8 @@
 <html
   {{ if eq .Title .Site.Title }}
     id='landing'
-  {{ else if .Params.client }}
-    id="work"
+  {{ else if eq .Section "work" }}
+    id='work'
   {{ else }}
     id='{{ .Title | lower }}'
   {{ end }}

@@ -1,11 +1,11 @@
 ---
-client: Kelda
+title: Kelda
 bodyclass: kelda
-title: Art.
+headline: Art.
 website: kelda.io
 featuredImageFile: "/img/thumb-3.jpg"
-quote: Working with Eli has been fantastic! We got beautiful results quickly, without
-  a lot of hassle. He did a great job listening to our needs, and producing work that
+quote: Working with DUSK has been fantastic! We got beautiful results quickly, without
+  a lot of hassle. They did a great job listening to our needs, and producing work that
   surpassed our expectations.
 attribution: "**Ethan Jackson**, Founder & CEO of Kelda"
 images:
@@ -34,7 +34,7 @@ tags:
 - hugo
 - css3
 - illustration
-weight: -3
+weight: 1
 date: 2019-03-15 05:11:24 +0000
 
 ---

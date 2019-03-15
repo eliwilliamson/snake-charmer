@@ -1,12 +1,12 @@
 ---
 bodyclass: christ-college
+headline: "The Christ College of Nursing and Health Sciences"
 title: "The Christ College of Nursing and Health Sciences"
-client: "The Christ College of Nursing and Health Sciences"
 website: "thechristcollege.edu"
 featuredImageFile: "/img/work/christ-college-thumb.jpg"
 quote: "The Christ College of Nursing and Health Sciences will be an innovative institution of higher learning providing a distinctive curriculum in nursing and health sciences."
 attribution: "**Christ College's Vision Statement**"
-weight: 4
+weight: 7
 images:
 - "/img/work/christ-college-0.jpg"
 - "/img/work/christ-college-1.png"

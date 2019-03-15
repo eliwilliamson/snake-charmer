@@ -1,8 +1,8 @@
 ---
-title: Building a newsletter to 1 million weekly subscribers.
+headline: Building a newsletter to 1 million weekly subscribers.
 date: 2018-09-13 16:59:17 +0000
 bodyclass: biz-me
-client: Biz.me
+title: Biz.me
 website: biz.me
 featuredImageFile: "/img/biz-me.jpg"
 quote: Our experience with DUSK has been nothing short of stellar. Their design and
@@ -12,7 +12,7 @@ quote: Our experience with DUSK has been nothing short of stellar. Their design 
   HIGHLY recommend them.
 undefined: ''
 attribution: "**Ohad Eder-Pressman**, Owner & CEO of Biz.me"
-weight: 1
+weight: 4
 images:
 - "/img/art-full-width.jpg"
 - "/img/art-full-width copy.jpg"

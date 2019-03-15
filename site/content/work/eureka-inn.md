@@ -1,12 +1,12 @@
 ---
 bodyclass: "eureka"
-client: "Historic Eureka Inn"
+title: "Historic Eureka Inn"
 website: eurekajonesborough.com
-title: "Taking the only historic hotel in Tennessee's oldes town into the 21st Century."
+headline: "Taking the only historic hotel in Tennessee's oldes town into the 21st Century."
 featuredImageFile: "/img/work/eureka-thumb.jpg"
 quote: "The Historic Eureka Inn is located on Main Street, once the old Stage Road, in the heart of downtown Jonesborough's Historic District. Indulge in the Jonesborough Experience by staying in this gracefully aged inn. Guests will not only enjoy private bathrooms, individual climate controls, free Wi-Fi, cable television, luxurious amenities, and a locally sourced a la carte breakfast; they will also enjoy the ambiance of the exquisite Victorian decor and architecture."
 attribution: "**Katelyn Yarbrough**, Co-owner & Innkeeper at Historic Eureka Inn"
-weight: 5
+weight: 8
 images:
 - "/img/work/eureka-1.jpg"
 - "/img/work/eureka-2.jpg"
