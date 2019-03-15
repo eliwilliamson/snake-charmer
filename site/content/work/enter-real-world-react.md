@@ -4,9 +4,9 @@ bodyclass: rwr
 title: Enter Real World React
 website: realworldreact.com
 featuredImageFile: "/img/thumb.jpg"
-quote: s
+quote: ''
 undefined: ''
-attribution: s
+attribution: ''
 images:
 - "/img/thumb.jpg"
 - "/img/art-full-width-1.jpg"
