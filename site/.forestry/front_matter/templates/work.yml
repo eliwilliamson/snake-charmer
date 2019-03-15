@@ -38,7 +38,7 @@ fields:
   label: Quote
   description: What did someone say about this project?
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: markdown
@@ -48,7 +48,7 @@ fields:
   label: Attribution
   description: Who said the quote? Please bold the person's name.
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: markdown
