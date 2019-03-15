@@ -26,6 +26,5 @@ tags:
 - interaction design
 weight: 0
 date: 2019-03-15 03:14:59 +0000
-draft: true
 
 ---
