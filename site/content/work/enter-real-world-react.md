@@ -8,7 +8,7 @@ quote: ''
 undefined: ''
 attribution: ''
 images:
-- "/img/thumb.jpg"
+- "/img/art-full-width-2.jpg"
 - "/img/art-full-width-1.jpg"
 - "/img/art-half-width-1.jpg"
 - "/img/art-half-width-2.jpg"
