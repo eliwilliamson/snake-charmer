@@ -1,7 +1,7 @@
 ---
 client: Real World React
 bodyclass: rwr
-title: Enter Real World React
+title: Enter Real World React.
 website: realworldreact.com
 featuredImageFile: "/img/thumb.jpg"
 quote: ''
