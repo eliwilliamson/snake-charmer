@@ -27,7 +27,7 @@
             <p>{{ .Params.description | markdownify }}</p>
           </div>
         </div>
-        {{ if eq $index 2 }}
+        {{ if or (eq $index 2) (eq $index 5) }}
           </div>
           <div class="row">
         {{ end }}
