@@ -31,6 +31,5 @@ tags:
 - golang
 weight: -2
 date: 2019-03-15 04:34:38 +0000
-draft: true
 
 ---
