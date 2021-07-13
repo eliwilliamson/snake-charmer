@@ -106,7 +106,7 @@ gulp.task("index-site", (cb) => {
     .pipe(reduce(function(memo, content, file, cb) {
 
       var section      = S(file.path).chompLeft(file.cwd + "/dist").between("/", "/").s,
-          title        = S(content).between("<title>", "</title>").collapseWhitespace().chompRight(" | Dusk Digital").s,
+          title        = S(content).between("<title>", "</title>").collapseWhitespace().chompRight(" | Snake Charmer Tattoo").s,
           pageContent  = S(content).collapseWhitespace().between('search-results">', '<footer class="footer').stripTags().collapseWhitespace().s,
           href         = S(file.path).chompLeft(file.cwd + "/dist").s,
           pageInfo     = new Object(),

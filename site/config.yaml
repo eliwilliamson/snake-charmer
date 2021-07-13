@@ -1,8 +1,8 @@
 baseurl: "/"
 languageCode: "en-us"
-title: "DUSK Digital"
+title: "Snake Charmer Tattoo"
 disable404: false
 metaDataFormat: "yaml"
 pluralizeListTitles: false
 permalinks:
-  work: /work/:title
+  work: /portfolio/:title

@@ -36,6 +36,7 @@
 
   .logo {
     height: $large;
+    width: auto;
     margin-top: calc(($large - $medium) / -2);
 
   }

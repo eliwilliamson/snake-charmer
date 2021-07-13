@@ -1,16 +1,16 @@
 ---
 styleoverrides: /css/landing.css
 
-hook: Sunset those worries...
+hook: Johnson City, TN
 headline:
-  lead: Let's craft experiences that
+  lead: Providing the best Tattoos
   verbs:
-    - resonate with users
-    - grow your business
-    - bridge chasms
-    - transform brands
+    - in the traditional style
+    - with the best artists
+    - at the best prices
+    - with a gentle hand
 
 primarycta:
-  btntext: See Projects →
-  linksto: /work/
+  btntext: See Portfolio →
+  linksto: /portfolio/
 ---
