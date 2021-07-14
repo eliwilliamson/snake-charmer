@@ -1300,6 +1300,8 @@ h6 i {
 .artist img {
     display: block;
     margin: 0 auto 20px auto;
+    height:  125px;
+    width:  125px;
 }
 
 .artist-role {
