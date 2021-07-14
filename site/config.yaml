@@ -1,8 +1,0 @@
-baseurl: "/"
-languageCode: "en-us"
-title: "Snake Charmer Tattoo"
-disable404: false
-metaDataFormat: "yaml"
-pluralizeListTitles: false
-permalinks:
-  work: /portfolio/:title
