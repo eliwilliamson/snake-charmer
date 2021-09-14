@@ -3711,3 +3711,7 @@ html[xmlns] .flexslider .slides,
     }
 
 }
+
+.work-thumb {
+    border-radius: 100000px;
+}
